@@ -1,0 +1,95 @@
+    <html>
+    <head>   
+    </head>
+    <body>
+        <script>    
+        let type = ['梅花','方塊','紅心','黑桃']
+        let num = [1,1,2,3,,4,5,6,7,8,9,10,11,12,13]
+        let card = [ ]
+        let users = [[],[],[],[]]
+        let 梅花1 = "梅花1.png"  
+        let 梅花2 = "梅花2.png"
+        let 梅花3 = "梅花3.png"
+        let 梅花4 = "梅花4.png"
+        let 梅花5 = "梅花5.png"
+        let 梅花6 = "梅花6.png"
+        let 梅花7 = "梅花7.png"
+        let 梅花8 = "梅花8.png"
+        let 梅花9 = "梅花9.png"
+        let 梅花10 = "梅花10.png"
+        let 梅花11 = "梅花11.png"
+        let 梅花12 = "梅花12.png"
+        let 梅花13 = "梅花13.png"
+        let 方塊2 = "方塊2.png" 
+        let 方塊3 = "方塊3.png"
+        let 方塊4 = "方塊4.png"
+        let 方塊5 = "方塊5.png"
+        let 方塊6 = "方塊6.png"
+        let 方塊7 = "方塊7.png"
+        let 方塊8 = "方塊8.png"
+        let 方塊9 = "方塊9.png"
+        let 方塊10 = "方塊10.png"
+        let 方塊11 = "方塊11.png"
+        let 方塊12 = "方塊12.png"
+        let 方塊13 = "方塊13.png"
+        let 紅心1 = "紅心1.png"
+        let 紅心2 = "紅心2.png"
+        let 紅心3 = "紅心3.png"
+        let 紅心4 = "紅心4.png"
+        let 紅心5 = "紅心5.png"
+        let 紅心6 = "紅心6.png"
+        let 紅心7 = "紅心7.png"
+        let 紅心8 = "紅心8.png"
+        let 紅心9 = "紅心9.png"
+        let 紅心10 = "紅心10.png"
+        let 紅心11 = "紅心11.png"
+        let 紅心12 = "紅心12.png"
+        let 紅心13 = "紅心13.png"
+        let 黑桃1 = "黑桃1.png"
+        let 黑桃2 = "黑桃2.png"
+        let 黑桃3 = "黑桃3.png"
+        let 黑桃4 = "黑桃4.png"
+        let 黑桃5 = "黑桃5.png"
+        let 黑桃6 = "黑桃6.png"
+        let 黑桃7 = "黑桃7.png"
+        let 黑桃8 = "黑桃8.png"
+        let 黑桃9 = "黑桃9.png"
+        let 黑桃10 = "黑桃10.png"
+        let 黑桃11 = "黑桃11.png"
+        let 黑桃12 = "黑桃12.png"
+        let 黑桃13 = "黑桃13.png"
+
+        for (let i in type){
+        for (let j in type){
+        card.push(type[i]+num[j])
+        }
+        }
+        //for(let i of type){
+        //    for(let j of type){
+        //        card.push(i+j)
+        //    }
+        //}
+        //console.log(card.toString());
+        //console.log(card.length);
+        //console.log(Math.floor(4*Math.random()));
+
+        for(let i of card){
+            let ran Math.floor(4*Math.random())
+            while(users[ran].length>=13){
+                ran = (ran+1)%users.length
+            }
+            users[ran].push(i)
+            //if(users[ran].length<=13){
+            //    users[ran].push(i)
+            //}
+            //else{
+            //    users[(ran+1)%users.length].push(i)
+            //}
+        }
+
+        for(let i of users){
+            console.log(i.toString());
+        }
+        </script>
+    </body>
+    </html>
